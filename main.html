@@ -3,14 +3,67 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            width: 1100px;
+            margin: 0 auto;
+        }
+
+        .imageContainer {
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        th:first-child,
+        th:last-child,
+        td:first-child,
+        td:last-child {
+            width: 200px;
+        }
+
+        th:nth-child(2),
+        td:nth-child(2) {
+            width: 600px;
+        }
+    </style>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <div class="imageContainer">
+        <img src="image1.jpg" alt="Architecture Image">
+    </div>
 
+    <table>
+        <tr>
+            <th><img src="image2.jpg" alt="Architecture Image"></th>
+            <td>Text Content</td>
+            <th><img src="image3.jpg" alt="Architecture Image"></th>
+        </tr>
+        <tr>
+            <th><img src="image4.jpg" alt="Architecture Image"></th>
+            <td>Text Content</td>
+            <th><img src="image5.jpg" alt="Architecture Image"></th>
+        </tr>
+    </table>
+
+    <script type="text/javascript" src="./script.js"></script>
 </body>
 
 </html>
